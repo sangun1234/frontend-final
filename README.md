@@ -1,70 +1,22 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. 빨강색 박스의 내용은 계산 합니다.
+   -. 각 과목의 총점 : 출석점수, 과제점수, 중간점수, 기말고사 점수의 합계 [O]
+   -. 각 과목의 성적 : 학점 기준에 의한 학점으로 계산(ex. 91점이면 A0) [O]
+   -. 합계 란의 학점, 출석점수, 과제점수, 중간점수, 기말고사 점수 =
+   전 과목의 학점, 출석점수, 과제점수, 중간점수, 기말고사 점수의 합계 [O]
+   -. 합계 란의 평균 : 전 과목의 총점의 합 / 전 과목 수 [O]
+   단, 학점이 “F”인 경우 빨강색으로 표시할 것(Pass 과목은 점수에서 계산하지 않음) [O]
+3. 기타
+   -. 각 항목은 예시 화면처럼 정렬(중앙, 좌측) [O]
+   -. 마지막 줄 합계는 예시처럼 셀을 병합(이수~과목명까지 3개의 셀)[O]
+   -. 색깔은 예시처럼 반드시 파란색일 필요는 없으나, 색깔을 반드시 입힐 것[O]
+   -. 추가버튼 클릭 시 맨 아래에 줄이 추가되고 저장버튼을 클릭하면 합계 등이 계산 될 것 [O]
+   -. 체크박스 또는 해당 줄을 마우스로 클릭한 후 삭제버튼을 클릭 시 해당 줄을 삭제할 것 [O]
+   -. 이수, 필수, 과목명 순으로 오름차순 정렬할 것[O]
+   -. 추가나 삭제 처리 후 변경된 내역을 보여주고 계산도 다시 적용할 것[O]
+   -. 이수 구분은 교양, 전공으로 한정하되 선택할 수 있도록 할 것(Select Box)[O]
+   -. 필수 구분은 필수, 선택으로 한정하되 선택할 수 있도록 할 것(Select Box)[O]
+   -. 학점이 ‘1’학점인 과목은 무조건 Pass/Non Pass로 처리할 것[O]
+   -. 출석 및 과제 점수는 0보다 작을 수 없고 20 클 수 없다.[O]
+   -. 중간 및 기말 점수는 0보다 작을 수 없고 30 클 수 없다.[O]
+   -. 과목별 총점은 0보다 작을 수 없고 100 클 수 없다. [O]
+   -. 동일과목이 있는 경우 Error Message 출력시킬 것.(입력 불가 – 단 ‘F’ 학점은 제외)[O]

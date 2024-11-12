@@ -1,0 +1,30 @@
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  th {
+    background-color:#00FFBF;
+    font-weight: bold;
+  }
+  
+  .total-row {
+    font-weight: bold;
+    background-color: #00FFBF;
+  }
+  
+  .selected {
+    background-color: #81F7F3;
+  }
